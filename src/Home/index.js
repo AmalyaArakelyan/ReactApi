@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {MDBTable, MDBTableBody, MDBTableHead} from 'mdbreact';
+import Articles from "../Articles/Articles"
+import Favorites from "../Articles/Favorites"
 
 
 
@@ -8,7 +10,7 @@ class HomePage extends Component {
         super(props);
 
         this.state = {
-            loading: false,
+
         };
     }
 
@@ -16,16 +18,15 @@ class HomePage extends Component {
 
     }
 
-
     componentWillUnmount() {
-        this.props.firebase.users().off();
+
     }
 
     render() {
         return (
                     <div>
-
-
+                        <Favorites />
+                        <Articles />
                     </div>
 
         );
