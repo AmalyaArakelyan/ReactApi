@@ -8,6 +8,7 @@ import {
 const Navigation = () => (
     <div>
         <MDBNavbar color="default-color" dark expand="md">
+            <div className="container">
             <MDBNavbarBrand>
                 <strong className="white-text">React App</strong>
             </MDBNavbarBrand>
@@ -16,11 +17,12 @@ const Navigation = () => (
             <MDBNavbarNav left>
             <MDBNavItem active>
             <MDBNavLink to={ROUTES.HOME}>Home</MDBNavLink>
-        </MDBNavItem>
+            </MDBNavItem>
 
-        </MDBNavbarNav>
+            </MDBNavbarNav>
 
-        </MDBCollapse>
+            </MDBCollapse>
+            </div>
         </MDBNavbar>
     </div>
 );

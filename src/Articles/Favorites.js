@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import FavoritItem from "./FavoritItem"
 
+
 export default class SimpleSlider extends Component {
     render() {
         const settings = {
@@ -14,7 +15,7 @@ export default class SimpleSlider extends Component {
         };
         return (
             <div className='container'>
-                <h2> Your Favorites</h2>
+                <h2 className="pl-4 mt-5"> Your Favorites</h2>
                 <Slider {...settings}>
                     <FavoritItem />
                     <FavoritItem />

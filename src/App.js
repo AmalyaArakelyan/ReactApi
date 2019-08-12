@@ -8,14 +8,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Navigation from "./Navigation"
 import Home from "./Home"
+import ArticlePage from "./Article/ArticlePage"
+import Header from "./Header"
 
 function App() {
   return (
       <Router>
           <div>
+              <Header/>
               <Navigation />
 
               <Route exact path="/" component={Home} />
+              <Route exact path="/article/:id" component={ArticlePage} />
           </div>
       </Router>
   );
